@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  color: hsl(0, 0%, 100%);
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  /* border: 1px solid white; */
+  max-width: 375px;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.svg {
+  /* border: 1px solid hsl(216, 12%, 54%); */
+  background-color: hsl(213, 19%, 25%);
+  display: inline-block;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 2px;
+  margin-bottom: 15px;
+}
+
+.survey-text {
+  margin-bottom: 25px;
+}
+
+.survey-text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#num {
+  margin-bottom: 25px;
+}
+
+#num ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+#num ul button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(216, 12%, 25%);
+  cursor: pointer;
+}
+
+#num ul button:hover {
+  background-color: hsl(217, 12%, 63%);
+}
+#num ul button:focus {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.submit button {
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+.submit button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  font-weight: 700;
+}
+.selected {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.thank-you img {
+  margin-bottom: 15px;
+}
+
+#selection {
+  color: hsl(25, 97%, 53%);
+  border-radius: 15px;
+  background-color: hsl(213, 19%, 23%);
+  padding: 5px 0 2px 0;
+  width: 200px;
+  margin: auto;
+}
+span {
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-you-text p {
+  font-size: 13.5px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+}

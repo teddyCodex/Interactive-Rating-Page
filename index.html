@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Interactive Rating Component</title>
+  </head>
+  <body>
+    <section id="first-contain" class="container">
+      <div class="svg">
+        <img src="images/icon-star.svg" alt="gold star" />
+      </div>
+      <div class="survey-text">
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div id="num">
+        <ul>
+          <button onclick="one()">1</button>
+          <button onclick="two()">2</button>
+          <button onclick="three()">3</button>
+          <button onclick="four()">4</button>
+          <button onclick="five()">5</button>
+        </ul>
+      </div>
+      <div class="submit">
+        <button id="submit">SUBMIT</button>
+      </div>
+    </section>
+
+    <section id="second-contain" class="container hidden thank-you">
+      <div>
+        <img src="images/illustration-thank-you.svg" alt="" />
+      </div>
+      <div>
+        <p id="selection">
+          You selected <span id="num-sel"></span> out of
+          <span id="tot-num"></span>
+        </p>
+      </div>
+      <div class="thank-you-text">
+        <h2>Thank You!</h2>
+        <p>
+          We appreciate you taking this time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
